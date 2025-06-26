@@ -17,18 +17,20 @@ const footerData: FooterSection[] = [
   {
     title: "Company",
     links: [
-      { name: "About Us", path: "/", section: "about" },
-      { name: "Services", path: "/", section: "products" }, // ✅ updated from 'services'
+      { name: "About Us", path: "/companydetails" },
+      { name: "Our Products", path: "/", section: "products" }, // ✅ updated from 'services'
     ],
   },
   {
-    title: "Contact Us",
-    links: [{ name: "Email us", path: "mailto:info@nrcontainers.com" }],
+    title: "Email Us",
+    links: [{ name: "info@nrcontainers.com", path: "mailto:info@nrcontainers.com" }],
   },
   {
-    title: "More",
+    title: "Contact Us",
     links: [
-      { name: "Company details", path: "/companydetails" },
+        { name: "Mr. D. L. Kohli – +91 99019 61222", path: "tel:+919901961222" },
+        { name: "Mr. Deepam Kohli – +91 98860 37286", path: "tel:+919886037286" },
+        { name: "Mrs. Prerana Agarwal – +91 96200 24703", path: "tel:+919620024703" },
     ],
   },
 ];

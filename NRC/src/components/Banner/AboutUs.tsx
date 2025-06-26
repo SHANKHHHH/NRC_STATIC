@@ -1,13 +1,12 @@
-import { ArrowRight } from "lucide-react";
+//import { ArrowRight } from "lucide-react";
 import NRC from "../../assets/comman/Nrc.jpg";
 
 export default function AboutUs() {
-  const handleCompanyProfileClick = () => {
-    window.open(
-      "https://drive.google.com/file/d/19VxPfB1a4Kx_132fkBTuuaaPhBRSCIdn/view?usp=drivesdk",
-      "_blank"
-    );
-  };
+//   const handleCompanyProfileClick = () => {
+//     window.open(
+      
+//     );
+//   };
 
   return (
     <div className="bg-[#00AEEF] rounded-3xl mx-4 mt-10 px-6 py-14 shadow-2xl">
@@ -32,13 +31,13 @@ export default function AboutUs() {
           </p>
 
           <div>
-            <button
+            {/* <button
               onClick={handleCompanyProfileClick}
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#00AEEF] hover:bg-gray-100 font-semibold rounded-full text-base lg:text-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95"
             >
               <span>View Company Profile</span>
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </button> */}
           </div>
         </div>
 

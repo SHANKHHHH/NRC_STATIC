@@ -8,14 +8,14 @@ function CompanyDetails() {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center text-[#0127A7] mb-8 mt-32">
-        Company Details
+      <h1 className="text-4xl font-bold text-center text-[#00AEEF] mb-8 mt-32">
+        About Us
       </h1>
 
       <div className="max-w-5xl mx-auto flex flex-col gap-10 bg-white bg-opacity-80 p-8 rounded-lg shadow-lg text-gray-800">
         {/* Company Overview */}
         <section>
-          <h2 className="text-2xl font-semibold mb-3">About Us</h2>
+          
           <p className="text-lg leading-relaxed">
             <strong>NRContainers Pvt. Ltd.</strong> is an ISO 9001:2015 certified company and a leading manufacturer and supplier of printed corrugated boxes, multi-color folding box boards, micro flute mono cartons, and other customized packaging solutions.
             <br /><br />
