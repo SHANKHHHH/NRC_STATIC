@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/main.tsx/',
+  base: '/',
   plugins: [react(),tailwindcss(),],server: {
     host: true, // this exposes the local IP
     port: 5173,
