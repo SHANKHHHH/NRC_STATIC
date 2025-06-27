@@ -25,6 +25,7 @@ const Header: React.FC = () => {
   ) => {
     if (sectionId === "about") {
       e.preventDefault();
+      setIsMenuOpen(false);
       window.location.href = "/companydetails";
       return;
     }
@@ -39,6 +40,8 @@ const Header: React.FC = () => {
         }
       }, 300);
     } else {
+      e.preventDefault();
+      setIsMenuOpen(false);
       window.location.href = `/#${sectionId}`;
     }
   };
