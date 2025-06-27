@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/logo/logo1.png";
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Scroll to section on initial hash load
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -18,20 +17,18 @@ const Header: React.FC = () => {
     }
   }, []);
 
-  const toggleMenu = (): void => setIsMenuOpen((prev) => !prev);
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     sectionId: string
-  ): void => {
-    // Redirect About Us to /companydetails
+  ) => {
     if (sectionId === "about") {
       e.preventDefault();
       window.location.href = "/companydetails";
       return;
     }
 
-    // Smooth scroll on homepage
     if (window.location.pathname === "/" || window.location.pathname === "") {
       e.preventDefault();
       setIsMenuOpen(false);
@@ -48,14 +45,14 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { label: "About Us", id: "about" },
-    { label: "Our Products ", id: "products" },
+    { label: "Our Products", id: "products" },
     { label: "Our Machineries", id: "machine" },
     { label: "Our Clients", id: "client" },
     { label: "Contact Us", id: "contact" },
   ];
 
   return (
-    <header className="bg-white h-20 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),_0_-4px_6px_-1px_rgba(0,0,0,0.1)] rounded-xl mx-2 md:mx-6 mt-4 px-4 z-50">
+    <header className="relative bg-white h-20 rounded-2xl shadow-lg mx-3 md:mx-6 mt-4 px-5 z-50">
       <nav className="max-w-7xl mx-auto h-full flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center h-full">
@@ -67,24 +64,24 @@ const Header: React.FC = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-10">
           {navLinks.map(({ label, id }) => (
             <a
               key={label}
               href={`/#${id}`}
               onClick={(e) => handleNavClick(e, id)}
-              className="text-[#00AEEF] text-base font-semibold hover:text-[#007ba3] transition-all duration-300 relative group"
+              className="text-[#00AEEF] font-medium text-[15px] hover:text-[#007ba3] relative transition-all duration-300 group"
             >
               {label}
-              <span className="block h-0.5 w-0 bg-[#007ba3] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#007ba3] transition-all duration-300 group-hover:w-full rounded-full"></span>
             </a>
           ))}
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Hamburger Icon */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-800 focus:outline-none"
+          className="md:hidden text-gray-800 focus:outline-none z-50"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMenuOpen ? (
@@ -104,13 +101,13 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden mt-4 px-4 py-4 rounded-lg bg-white shadow space-y-3">
+        <div className="absolute top-full left-0 right-0 bg-white mt-2 px-6 py-4 rounded-b-2xl shadow-md md:hidden z-40 space-y-4 animate-fade-in-down">
           {navLinks.map(({ label, id }) => (
             <a
               key={label}
               href={`/#${id}`}
               onClick={(e) => handleNavClick(e, id)}
-              className="block text-[#00AEEF] font-medium text-base hover:text-[#007ba3]"
+              className="block text-[#00AEEF] font-medium text-base hover:text-[#007ba3] transition-all duration-200"
             >
               {label}
             </a>
