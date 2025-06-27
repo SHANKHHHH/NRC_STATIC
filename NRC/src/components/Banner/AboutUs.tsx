@@ -1,5 +1,5 @@
 //import { ArrowRight } from "lucide-react";
-import NRC from "../../assets/comman/Nrc.jpg";
+import NRC from "../../assets/comman/NRC.jpg";
 
 export default function AboutUs() {
 //   const handleCompanyProfileClick = () => {
