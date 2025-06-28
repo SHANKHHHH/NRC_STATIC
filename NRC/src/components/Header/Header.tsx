@@ -55,7 +55,13 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="relative bg-white h-20 rounded-2xl shadow-lg mx-3 md:mx-6 mt-4 px-5 z-50">
+    <header
+      className="relative bg-white h-20 rounded-2xl shadow-lg mx-3 md:mx-6 mt-4 px-5 z-50"
+      style={{
+        boxShadow:
+          "0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+      }}
+    >
       <nav className="max-w-7xl mx-auto h-full flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center h-full">
@@ -88,12 +94,24 @@ const Header: React.FC = () => {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMenuOpen ? (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           ) : (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
               <line x1="3" y1="6" x2="21" y2="6" />
               <line x1="3" y1="12" x2="21" y2="12" />
               <line x1="3" y1="18" x2="21" y2="18" />

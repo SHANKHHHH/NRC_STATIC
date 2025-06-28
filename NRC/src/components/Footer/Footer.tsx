@@ -25,14 +25,14 @@ const footerData: FooterSection[] = [
     title: "Email Us",
     links: [{ name: "info@nrcontainers.com", path: "mailto:info@nrcontainers.com" }],
   },
-  {
-    title: "Contact Us",
-    links: [
-        { name: "Mr. D. L. Kohli – +91 99019 61222", path: "tel:+919901961222" },
-        { name: "Mr. Deepam Kohli – +91 98860 37286", path: "tel:+919886037286" },
-        { name: "Mrs. Prerana Agarwal – +91 96200 24703", path: "tel:+919620024703" },
-    ],
-  },
+  // {
+  //   title: "Contact Us",
+  //   links: [
+  //       { name: "Mr. D. L. Kohli – +91 99019 61222", path: "tel:+919901961222" },
+  //       { name: "Mr. Deepam Kohli – +91 98860 37286", path: "tel:+919886037286" },
+  //       { name: "Mrs. Prerana Agarwal – +91 96200 24703", path: "tel:+919620024703" },
+  //   ],
+  // },
 ];
 
 const Footer = () => {
