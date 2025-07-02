@@ -94,11 +94,9 @@ function CompanyDetails() {
               info@nrcontainers.com
             </a>
             <br /><br />
-            <strong>Key Contacts:</strong>
+            
             <br />
-            Mr. D. L. Kohli – <a href="tel:+919901961222" className="text-blue-600">+91 99019 61222</a><br />
-            Mr. Deepam Kohli – <a href="tel:+919886037286" className="text-blue-600">+91 98860 37286</a><br />
-            Mrs. Prerana Agarwal – <a href="tel:+919620024703" className="text-blue-600">+91 96200 24703</a>
+          
           </p>
         </section>
       </div>
