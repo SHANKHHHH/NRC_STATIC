@@ -56,24 +56,27 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className="relative bg-white h-20 rounded-2xl shadow-lg mx-3 md:mx-6 mt-4 px-5 z-50"
+      className="relative bg-white h-20 rounded-2xl shadow-lg mx-3 lg:mx-6 mt-4 px-5 z-50"
       style={{
         boxShadow:
           "0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1)",
       }}
     >
       <nav className="max-w-7xl mx-auto h-full flex items-center justify-between">
-        {/* Logo */}
-        <a href="/" className="flex items-center h-full">
+        {/* Logo with Text */}
+        <a href="/" className="flex items-center h-full space-x-2">
           <img
             src={logo}
             alt="logo"
             className="h-full max-h-full w-auto object-contain"
           />
+          <span className="text-[#00AEEF] font-bold text-lg whitespace-nowrap">
+            NR CONTAINERS
+          </span>
         </a>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-10">
+        {/* Desktop Navigation - now only visible on lg and up */}
+        <div className="hidden lg:flex items-center space-x-10">
           {navLinks.map(({ label, id }) => (
             <a
               key={label}
@@ -87,10 +90,10 @@ const Header: React.FC = () => {
           ))}
         </div>
 
-        {/* Hamburger Icon */}
+        {/* Hamburger Icon - visible below lg */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-800 focus:outline-none z-50"
+          className="lg:hidden text-gray-800 focus:outline-none z-50"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMenuOpen ? (
@@ -120,9 +123,9 @@ const Header: React.FC = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - visible below lg */}
       {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white mt-2 px-6 py-4 rounded-b-2xl shadow-md md:hidden z-40 space-y-4 animate-fade-in-down">
+        <div className="absolute top-full left-0 right-0 bg-white mt-2 px-6 py-4 rounded-b-2xl shadow-md lg:hidden z-40 space-y-4 animate-fade-in-down">
           {navLinks.map(({ label, id }) => (
             <a
               key={label}
