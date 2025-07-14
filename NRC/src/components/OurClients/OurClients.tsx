@@ -8,8 +8,16 @@ import hush from "../../assets/clients/hsuh .avif";
 import speedo from "../../assets/clients/speedo.avif";
 import daisy from "../../assets/clients/daisy.avif";
 import sakata from "../../assets/clients/sakata .avif";
-import acs from "../../assets/clients/acs.avif";
+import acs from "../../assets/clients/acs_new.avif";
 import hyveg from "../../assets/clients/hyveg.avif";
+import kanti from "../../assets/clients/kanti.avif"
+import raymond from "../../assets/clients/raymond.avif";
+import nongwoo from "../../assets/clients/nongwood.avif";
+import origami from "../../assets/clients/origami.avif";
+import tokita from "../../assets/clients/tokita.avif";
+import seeding from "../../assets/clients/seeding.avif";
+
+
 
 const clientLogos: string[] = [
   bata,
@@ -22,6 +30,12 @@ const clientLogos: string[] = [
   sakata,
   acs,
   hyveg,
+  kanti,
+  raymond,
+  nongwoo,
+  origami,
+  tokita,
+  seeding
 ];
 
 export default function OurClients() {
