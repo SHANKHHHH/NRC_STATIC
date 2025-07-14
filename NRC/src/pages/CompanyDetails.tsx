@@ -26,13 +26,18 @@ function CompanyDetails() {
         </section>
 
         {/* Facilities */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-3">Facilities & Locations</h2>
-          <ul className="list-disc list-inside text-lg space-y-2">
-            <li><strong>Unit 1:</strong> Hariraju Layout, Doddabettahalli, Vidyaranyapura Post, Bangalore – 53,000 sq. ft.</li>
-            <li><strong>Unit 2:</strong> KIADB Industrial Area, Doddaballapura – 70,000 sq. ft.</li>
-          </ul>
-        </section>
+       {/* Facilities */}
+          <section>
+            <h2 className="text-2xl font-semibold mb-3">Facilities & Locations</h2>
+            <ul className="list-disc list-inside text-lg space-y-2">
+            <li>
+              <strong>NRCONTAINERS PVT LTD – UNIT 1:</strong><br />
+              #237, 238, 249, 250, Obadenahalli Village,<br />
+              3rd Phase, KIADB Industrial Area, Doddaballapura – 561203
+            </li>
+      </ul>
+    </section>
+
 
         {/* Product Range */}
         <section>

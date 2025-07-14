@@ -22,8 +22,10 @@ const footerData: FooterSection[] = [
     ],
   },
   {
-    title: "Email Us",
-    links: [{ name: "info@nrcontainers.com", path: "mailto:info@nrcontainers.com" }],
+    title: "Contact Us",
+    links: [{ name: "info@nrcontainers.com", path: "mailto:info@nrcontainers.com" },
+      { name: "Contact No: 9620933341", path: "tel:+919620933341" },],
+    
   },
   // {
   //   title: "Contact Us",

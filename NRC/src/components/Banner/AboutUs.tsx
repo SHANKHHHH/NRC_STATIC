@@ -24,10 +24,7 @@ export default function AboutUs() {
           </div>
 
           <p className="text-white/90 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            NRContainers Pvt. Ltd. is a leading ISO 9001:2015 certified manufacturer of
-            Printed Corrugated Boxes, Folding Box Boards, and Microflute Mono Cartons.
-            With decades of experience and state-of-the-art machinery, we deliver precision,
-            flexibility, and quality packaging solutions to industries across India.
+          NRContainers Pvt. Ltd. is an ISO 9001:2015 certified company and a trusted manufacturer of printed corrugated boxes, folding box boards, and microflute mono cartons. With decades of industry expertise and advanced machinery, we provide reliable, flexible, and high-quality packaging solutions to clients across India and overseas, delivering packaging that meets international standards.
           </p>
 
           <div>
